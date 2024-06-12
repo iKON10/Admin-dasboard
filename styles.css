@@ -1,0 +1,8 @@
+.menuItem img, .menuIcon img, .gh-avatar img, .Icons img{
+    height: 25px;
+    width: 25px;
+}
+
+h1{
+    font-size: 1rem;
+}
