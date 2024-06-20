@@ -114,6 +114,8 @@ menuitem {
     background-color: var(--nav-bg-1);
     padding: 1.5rem, 3rem;
     border-bottom: 2px solid rgb(219, 219, 219);
+    /* position: sticky; */
+    top: 0;
 }
 
 .topnav {
@@ -161,6 +163,32 @@ menuitem {
     cursor: pointer;
 }
 
+.gh-avatar2 {
+    background: var(--gh-avatar) center center / cover no-repeat;
+    border-radius: 50%;
+    margin: 0 1rem 0 2.5rem;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.gh-avatar3 {
+    background: var(--gh-avatar) center center / cover no-repeat;
+    border-radius: 50%;
+    margin: 0 1rem 0 2.5rem;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.gh-avatar4 {
+    background: var(--gh-avatar) center center / cover no-repeat;
+    border-radius: 50%;
+    margin: 0 1rem 0 2.5rem;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
 .content {
     grid-area: content;
     transition: var(--transition-notDrawer);
@@ -170,6 +198,9 @@ menuitem {
     grid-template-columns: 1fr auto;
     grid-template-rows: min-content 1fr;
     gap: 2rem;
+    grid-template-areas:  
+        "projects announcements"
+        "projects trending";
     overflow: auto;
     height: 100%;
 }
@@ -190,10 +221,6 @@ img {
     gap: 1rem;
 }
 
-.gh-avatar {
-    width: 65px;
-    height: 65px;
-}
 
 .greeting {
     font-weight: 800;
@@ -272,4 +299,85 @@ content h3 {
     align-items: center;
     padding-bottom: 5px;
     padding-right: 5px;
+    gap: 1.4rem;
+}
+ 
+.card{
+    background-color: rgb(45, 187, 187, 459);
+    padding: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 1px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);   
+}
+
+.announcements{
+    grid-area: announcements;
+    margin-top: 35px;
+}
+
+.announcements:first-child{
+    padding-top: 0;
+}
+
+.announcements:last-child{
+    padding-bottom: 0;
+}
+
+.announcement h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+   
+}
+
+.announcement p{
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+
+.trending{
+    grid-area: trending;
+    margin-bottom: 150px;
+    
+}
+
+.trending .card{
+    padding: 1.5rem;
+
+}
+
+.trend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.trend + .trend{
+    margin-top: 1.5rem;
+}
+
+.trend .account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.username{
+    font-weight: 500;
+    margin-bottom: 0.15rem;
+}
+
+.projects{
+    grid-area: projects;
+}
+
+.announcement + .announcement {
+    border-top: rgb(115, 115, 155) 1px solid;
 }
