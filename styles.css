@@ -164,7 +164,7 @@ menuitem {
 }
 
 .gh-avatar2 {
-    background: var(--gh-avatar) center center / cover no-repeat;
+    background: var(--gh-avatar2) center center / cover no-repeat;
     border-radius: 50%;
     margin: 0 1rem 0 2.5rem;
     height: 25px;
@@ -173,7 +173,7 @@ menuitem {
 }
 
 .gh-avatar3 {
-    background: var(--gh-avatar) center center / cover no-repeat;
+    background: var(--gh-avatar3) center center / cover no-repeat;
     border-radius: 50%;
     margin: 0 1rem 0 2.5rem;
     height: 25px;
@@ -182,7 +182,7 @@ menuitem {
 }
 
 .gh-avatar4 {
-    background: var(--gh-avatar) center center / cover no-repeat;
+    background: var(--gh-avatar4) center center / cover no-repeat;
     border-radius: 50%;
     margin: 0 1rem 0 2.5rem;
     height: 25px;
